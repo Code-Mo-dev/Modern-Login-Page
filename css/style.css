@@ -1,0 +1,545 @@
+@import url("https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Dancing+Script:wght@400..700&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400..700&display=swap");
+:root {
+  --background-color: #512da8;
+  --color-for-hover: #763cac;
+  --main-font: "Raleway", serif;
+  --italic-font: "Dancing Script", serif;
+  --font-title: "Comic Neue", sans-serif;
+  --arabic-font: "Noto Nastaliq Urdu", serif;
+}
+
+* {
+  padding: 0%;
+  margin: 0%;
+  font-family: sans-serif, serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 50px;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+body section.container {
+  width: 60%;
+  height: 600px;
+  margin: auto;
+  position: relative;
+  -webkit-transform: translateY(25%);
+          transform: translateY(25%);
+  background-color: #fff;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 0 10px #ccc;
+          box-shadow: 0 0 10px #ccc;
+}
+body section.container div.container-signIn {
+  width: 45%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: inherit;
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  opacity: 1;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+  z-index: 5;
+}
+body section.container div.container-signIn div.parent-title {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: auto;
+  padding-top: 50px;
+}
+body section.container div.container-signIn div.parent-title h1 {
+  font-family: var(--main-font);
+  font-size: 50px;
+  color: #000000;
+  text-transform: capitalize;
+}
+body section.container div.container-signIn div.mediaAddAccounts {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  margin: 30px 0px;
+}
+body section.container div.container-signIn div.mediaAddAccounts span {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+body section.container div.container-signIn div.mediaAddAccounts span:hover {
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15), 0 6px 6px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15), 0 6px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+body section.container div.container-signIn div.mediaAddAccounts span i {
+  font-size: 30px;
+  -webkit-transform: translate(20%, 50%);
+          transform: translate(20%, 50%);
+  color: #123;
+  scale: 0.7;
+}
+body section.container div.container-signIn div.note {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: auto;
+}
+body section.container div.container-signIn div.note p {
+  color: #777;
+  font-family: var(--main-font);
+  font-size: 20px;
+  text-transform: capitalize;
+}
+body section.container div.container-signIn form {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 10px 0px;
+}
+body section.container div.container-signIn form input {
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  width: 80%;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  padding-left: 15px;
+  font-size: 18px;
+  color: #777;
+  background-color: #eee;
+}
+body section.container div.container-signIn form input::-webkit-input-placeholder {
+  text-transform: capitalize;
+}
+body section.container div.container-signIn form input::-moz-placeholder {
+  text-transform: capitalize;
+}
+body section.container div.container-signIn form input:-ms-input-placeholder {
+  text-transform: capitalize;
+}
+body section.container div.container-signIn form input::-ms-input-placeholder {
+  text-transform: capitalize;
+}
+body section.container div.container-signIn form input::placeholder {
+  text-transform: capitalize;
+}
+body section.container div.container-signIn form input:focus {
+  outline: none;
+}
+body section.container div.container-signIn button#ForgetPasswordBtn {
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #777;
+  font-family: var(--main-font);
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 500;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+body section.container div.container-signIn button#ForgetPasswordBtn:hover {
+  cursor: pointer;
+  color: var(--color-for-hover);
+}
+body section.container div.container-signIn button#signIn-btn {
+  width: 150px;
+  height: 50px;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  background-color: var(--background-color);
+  color: #fff;
+  font-family: var(--main-font);
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 500;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+body section.container div.container-signIn button#signIn-btn:hover {
+  cursor: pointer;
+}
+body section.container div.container-signIn.active {
+  -webkit-transform: translateX(121%);
+          transform: translateX(121%);
+  opacity: 0;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+}
+body section.container div.container-signUp {
+  width: 45%;
+  height: 100%;
+  background-color: #fff;
+  border-radius: inherit;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+  z-index: -1;
+}
+body section.container div.container-signUp div.parent-title {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: auto;
+}
+body section.container div.container-signUp div.parent-title h1 {
+  font-family: var(--main-font);
+  font-size: 50px;
+  color: #000000;
+  margin-top: 50px;
+  text-transform: capitalize;
+}
+body section.container div.container-signUp div.mediaAddAccounts {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+  margin: 30px 0px;
+}
+body section.container div.container-signUp div.mediaAddAccounts span {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+body section.container div.container-signUp div.mediaAddAccounts span:hover {
+  -webkit-box-shadow: 0 0 5px #ccc;
+          box-shadow: 0 0 5px #ccc;
+  cursor: pointer;
+}
+body section.container div.container-signUp div.mediaAddAccounts span i {
+  font-size: 30px;
+  -webkit-transform: translate(20%, 50%);
+          transform: translate(20%, 50%);
+  color: #123;
+  scale: 0.7;
+}
+body section.container div.container-signUp div.note {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: auto;
+}
+body section.container div.container-signUp div.note p {
+  color: #777;
+  font-family: var(--main-font);
+  font-size: 20px;
+  text-transform: capitalize;
+}
+body section.container div.container-signUp form {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 10px 0px;
+}
+body section.container div.container-signUp form input {
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  width: 80%;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  padding-left: 15px;
+  font-size: 18px;
+  color: #777;
+  background-color: #eee;
+}
+body section.container div.container-signUp form input::-webkit-input-placeholder {
+  text-transform: capitalize;
+}
+body section.container div.container-signUp form input::-moz-placeholder {
+  text-transform: capitalize;
+}
+body section.container div.container-signUp form input:-ms-input-placeholder {
+  text-transform: capitalize;
+}
+body section.container div.container-signUp form input::-ms-input-placeholder {
+  text-transform: capitalize;
+}
+body section.container div.container-signUp form input::placeholder {
+  text-transform: capitalize;
+}
+body section.container div.container-signUp form input:focus {
+  outline: none;
+}
+body section.container div.container-signUp button#signUp-btn {
+  width: 150px;
+  height: 50px;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-radius: 12px;
+  background-color: var(--background-color);
+  color: #fff;
+  font-family: var(--main-font);
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 500;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+body section.container div.container-signUp button#signUp-btn:hover {
+  cursor: pointer;
+}
+body section.container div.container-signUp.active {
+  opacity: 1;
+  z-index: 1;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+}
+body section.container section.toggle-container {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--background-color);
+  border-radius: 150px 30px 30px 100px;
+  z-index: 1000;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+}
+body section.container section.toggle-container div.toggle {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+body section.container section.toggle-container div.toggle div.toggle-panal-right {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-transform: translate(0px, 150px);
+          transform: translate(0px, 150px);
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+}
+body section.container section.toggle-container div.toggle div.toggle-panal-right div.title {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: auto;
+}
+body section.container section.toggle-container div.toggle div.toggle-panal-right div.title h1 {
+  font-family: var(--main-font);
+  font-size: 35px;
+  color: #ffffff;
+  margin: 50px 0px 10px;
+  text-transform: capitalize;
+}
+body section.container section.toggle-container div.toggle div.toggle-panal-right div.paragraph {
+  width: 65%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: auto;
+}
+body section.container section.toggle-container div.toggle div.toggle-panal-right div.paragraph p {
+  text-align: center;
+  color: #fff;
+  font-family: var(--main-font);
+  font-size: 18px;
+  text-transform: capitalize;
+}
+body section.container section.toggle-container div.toggle div.toggle-panal-right button#togleSignUpBtn {
+  width: 200px;
+  height: 50px;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  border: 2px solid #fff;
+  outline: none;
+  border-radius: 12px;
+  background-color: transparent;
+  color: #fff;
+  font-family: var(--main-font);
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 500;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+body section.container section.toggle-container div.toggle div.toggle-panal-right button#togleSignUpBtn:hover {
+  cursor: pointer;
+}
+body section.container section.toggle-container div.toggle div.toggle-panal-right.active {
+  -webkit-transform: translate(700px, 150px);
+          transform: translate(700px, 150px);
+}
+body section.container section.toggle-container div.toggle div.toggle-panal-left {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -webkit-transform: translate(-500px, -63px);
+          transform: translate(-500px, -63px);
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+}
+body section.container section.toggle-container div.toggle div.toggle-panal-left div.title {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: auto;
+}
+body section.container section.toggle-container div.toggle div.toggle-panal-left div.title h1 {
+  font-family: var(--main-font);
+  font-size: 33px;
+  color: #ffffff;
+  margin: 50px 0px 10px;
+  text-transform: capitalize;
+}
+body section.container section.toggle-container div.toggle div.toggle-panal-left div.paragraph {
+  width: 55%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: auto;
+}
+body section.container section.toggle-container div.toggle div.toggle-panal-left div.paragraph p {
+  text-align: center;
+  color: #fff;
+  font-family: var(--main-font);
+  font-size: 20px;
+  text-transform: capitalize;
+}
+body section.container section.toggle-container div.toggle div.toggle-panal-left button#toggleSignInBtn {
+  width: 200px;
+  height: 50px;
+  display: block;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  border: 2px solid #fff;
+  outline: none;
+  border-radius: 12px;
+  background-color: transparent;
+  color: #fff;
+  font-family: var(--main-font);
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 500;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+body section.container section.toggle-container div.toggle div.toggle-panal-left button#toggleSignInBtn:hover {
+  cursor: pointer;
+}
+body section.container section.toggle-container div.toggle div.toggle-panal-left.active {
+  -webkit-transform: translate(0px, -63px);
+          transform: translate(0px, -63px);
+}
+body section.container section.toggle-container.active {
+  border-radius: 30px 150px 100px 30px;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+}
+
+@-webkit-keyframes moveToggleContainer {
+  0% {
+    right: 0%;
+  }
+  100% {
+    right: 50%;
+  }
+}
+
+@keyframes moveToggleContainer {
+  0% {
+    right: 0%;
+  }
+  100% {
+    right: 50%;
+  }
+}
+@-webkit-keyframes moveBackToggleContainer {
+  0% {
+    right: 50%;
+  }
+  100% {
+    right: 0%;
+  }
+}
+@keyframes moveBackToggleContainer {
+  0% {
+    right: 50%;
+  }
+  100% {
+    right: 0%;
+  }
+}

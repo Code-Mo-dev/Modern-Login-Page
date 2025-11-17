@@ -1,0 +1,20 @@
+Login Page Project
+------------------
+Simple responsive login page front-end built with HTML, SCSS, and vanilla JS.
+Use this map to understand the repository layout before committing.
+
+login page/
+    |-- index.html
+    |-- prepros.config
+    |-- css/
+    |   |-- all.min.css
+    |   |-- style.css
+    |   |-- style.scss
+    |-- js/
+    |   |-- script.js
+    |-- webfonts/
+        |-- fa-brands-400.woff2
+        |-- fa-regular-400.woff2
+        |-- fa-solid-900.woff2
+        |-- fa-v4compatibility.woff2
+

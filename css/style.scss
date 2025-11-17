@@ -1,0 +1,428 @@
+@import url("https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Dancing+Script:wght@400..700&family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400..700&display=swap");
+
+:root {
+  //   --section-color: #4444466c;
+  //   --main-color: #00adc6;
+  --background-color: #512da8;
+  //   --footer-color: #2c4755;
+  --color-for-hover: #763cac;
+  --main-font: "Raleway", serif;
+  --italic-font: "Dancing Script", serif;
+  --font-title: "Comic Neue", sans-serif;
+  --arabic-font: "Noto Nastaliq Urdu", serif;
+}
+
+* {
+  padding: 0%;
+  margin: 0%;
+  font-family: sans-serif, serif;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 50px;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  section.container {
+    width: 60%;
+    height: 600px;
+    margin: auto;
+    position: relative;
+    transform: translateY(25%);
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 0 10px #ccc;
+    div.container-signIn {
+      width: 45%;
+      height: 100%;
+      background-color: #fff;
+      border-radius: inherit;
+      transform: translateX(0%);
+      opacity: 1;
+      transition: 1s linear;
+      z-index: 5;
+      div.parent-title {
+        width: fit-content;
+        height: fit-content;
+        margin: auto;
+        padding-top: 50px;
+        h1 {
+          font-family: var(--main-font);
+          font-size: 50px;
+          color: #000000;
+          text-transform: capitalize;
+        }
+      }
+      div.mediaAddAccounts {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 20px;
+        margin: 30px 0px;
+        span {
+          display: block;
+          width: 50px;
+          height: 50px;
+          border-radius: 10px;
+          border: 1px solid #ccc;
+          transition: 0.3s linear;
+          &:hover {
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15),
+              0 6px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+          }
+          i {
+            font-size: 30px;
+            transform: translate(20%, 50%);
+            color: #123;
+            scale: 0.7;
+          }
+        }
+      }
+      div.note {
+        width: fit-content;
+        height: fit-content;
+        margin: auto;
+        p {
+          color: #777;
+          font-family: var(--main-font);
+          font-size: 20px;
+          text-transform: capitalize;
+        }
+      }
+      form {
+        width: 100%;
+        height: fit-content;
+        padding: 10px 0px;
+        input {
+          display: block;
+          margin: auto;
+          margin-bottom: 20px;
+          width: 80%;
+          height: 40px;
+          border: none;
+          border-radius: 10px;
+          padding-left: 15px;
+          font-size: 18px;
+          color: #777;
+          background-color: #eee;
+          &::placeholder {
+            text-transform: capitalize;
+          }
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+      button#ForgetPasswordBtn {
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        color: #777;
+        font-family: var(--main-font);
+        font-size: 20px;
+        text-transform: capitalize;
+        font-weight: 500;
+        transition: 0.3s linear;
+        &:hover {
+          cursor: pointer;
+          color: var(--color-for-hover);
+        }
+      }
+      button#signIn-btn {
+        width: 150px;
+        height: 50px;
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 10px 20px;
+        border: none;
+        outline: none;
+        border-radius: 12px;
+        background-color: var(--background-color);
+        color: #fff;
+        font-family: var(--main-font);
+        font-size: 20px;
+        text-transform: capitalize;
+        font-weight: 500;
+        transition: 0.3s linear;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    div.container-signIn.active {
+      transform: translateX(121%);
+      opacity: 0;
+      transition: 1s linear;
+    }
+    div.container-signUp {
+      width: 45%;
+      height: 100%;
+      background-color: #fff;
+      border-radius: inherit;
+      position: absolute;
+      top: 0;
+      opacity: 0;
+      transition: 1s linear;
+      z-index: -1;
+      div.parent-title {
+        width: fit-content;
+        height: fit-content;
+        margin: auto;
+        h1 {
+          font-family: var(--main-font);
+          font-size: 50px;
+          color: #000000;
+          margin-top: 50px;
+          text-transform: capitalize;
+        }
+      }
+      div.mediaAddAccounts {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 20px;
+        margin: 30px 0px;
+        span {
+          display: block;
+          width: 50px;
+          height: 50px;
+          border-radius: 10px;
+          border: 1px solid #ccc;
+          transition: 0.3s linear;
+          &:hover {
+            box-shadow: 0 0 5px #ccc;
+            cursor: pointer;
+          }
+          i {
+            font-size: 30px;
+            transform: translate(20%, 50%);
+            color: #123;
+            scale: 0.7;
+          }
+        }
+      }
+      div.note {
+        width: fit-content;
+        height: fit-content;
+        margin: auto;
+        p {
+          color: #777;
+          font-family: var(--main-font);
+          font-size: 20px;
+          text-transform: capitalize;
+        }
+      }
+      form {
+        width: 100%;
+        height: fit-content;
+        padding: 10px 0px;
+        input {
+          display: block;
+          margin: auto;
+          margin-bottom: 20px;
+          width: 80%;
+          height: 40px;
+          border: none;
+          border-radius: 10px;
+          padding-left: 15px;
+          font-size: 18px;
+          color: #777;
+          background-color: #eee;
+          &::placeholder {
+            text-transform: capitalize;
+          }
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+      button#signUp-btn {
+        width: 150px;
+        height: 50px;
+        display: block;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 10px 20px;
+        border: none;
+        outline: none;
+        border-radius: 12px;
+        background-color: var(--background-color);
+        color: #fff;
+        font-family: var(--main-font);
+        font-size: 20px;
+        text-transform: capitalize;
+        font-weight: 500;
+        transition: 0.3s linear;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+    div.container-signUp.active {
+      opacity: 1;
+      z-index: 1;
+      transition: 1s linear;
+    }
+    //* Toggle Section
+    section.toggle-container {
+      width: 50%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: var(--background-color);
+      border-radius: 150px 30px 30px 100px;
+      z-index: 1000;
+      transition: 1s linear;
+      div.toggle {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        div.toggle-panal-right {
+          width: 100%;
+          height: fit-content;
+          transform: translate(0px, 150px);
+          transition: 1s linear;
+          div.title {
+            width: fit-content;
+            height: fit-content;
+            margin: auto;
+            h1 {
+              font-family: var(--main-font);
+              font-size: 35px;
+              color: #ffffff;
+              margin: 50px 0px 10px;
+              text-transform: capitalize;
+            }
+          }
+          div.paragraph {
+            width: 65%;
+            height: fit-content;
+            margin: auto;
+            p {
+              text-align: center;
+              color: #fff;
+              font-family: var(--main-font);
+              font-size: 18px;
+              text-transform: capitalize;
+            }
+          }
+          button#togleSignUpBtn {
+            width: 200px;
+            height: 50px;
+            display: block;
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            border: 2px solid #fff;
+            outline: none;
+            border-radius: 12px;
+            background-color: transparent;
+            color: #fff;
+            font-family: var(--main-font);
+            font-size: 20px;
+            text-transform: capitalize;
+            font-weight: 500;
+            transition: 0.3s linear;
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+        div.toggle-panal-right.active {
+          transform: translate(700px, 150px);
+        }
+        div.toggle-panal-left {
+          width: 100%;
+          height: fit-content;
+          transform: translate(-500px, -63px);
+          transition: 1s linear;
+          div.title {
+            width: fit-content;
+            height: fit-content;
+            margin: auto;
+            h1 {
+              font-family: var(--main-font);
+              font-size: 33px;
+              color: #ffffff;
+              margin: 50px 0px 10px;
+              text-transform: capitalize;
+            }
+          }
+          div.paragraph {
+            width: 55%;
+            height: fit-content;
+            margin: auto;
+            p {
+              text-align: center;
+              color: #fff;
+              font-family: var(--main-font);
+              font-size: 20px;
+              text-transform: capitalize;
+            }
+          }
+          button#toggleSignInBtn {
+            width: 200px;
+            height: 50px;
+            display: block;
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            border: 2px solid #fff;
+            outline: none;
+            border-radius: 12px;
+            background-color: transparent;
+            color: #fff;
+            font-family: var(--main-font);
+            font-size: 20px;
+            text-transform: capitalize;
+            font-weight: 500;
+            transition: 0.3s linear;
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+        div.toggle-panal-left.active {
+          transform: translate(0px, -63px);
+        }
+      }
+    }
+    section.toggle-container.active {
+      border-radius: 30px 150px 100px 30px;
+      transition: 1s linear;
+    }
+  }
+}
+@keyframes moveToggleContainer {
+  0% {
+    right: 0%;
+  }
+  100% {
+    right: 50%;
+  }
+}
+@keyframes moveBackToggleContainer {
+  0% {
+    right: 50%;
+  }
+  100% {
+    right: 0%;
+  }
+}
